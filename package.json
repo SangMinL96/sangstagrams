@@ -1,0 +1,22 @@
+{
+  "name": "sangstagrams",
+  "version": "1.0.0",
+  "description": "*React, ReactNative, Prisma, GraphQL, Apollo",
+  "repository": "https://github.com/SangMinL96/sangstagrams",
+  "author": "SangMinL96 <59109788+SangMinL96@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "babel-cli": "^6.26.0",
+    "dotenv": "^8.2.0",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
