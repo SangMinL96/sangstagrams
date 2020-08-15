@@ -1,2 +1,3 @@
 # sangstagram
-*React, ReactNative, Prisma, GraphQL, Apollo
+
+\*React, ReactNative, Prisma, GraphQL, Apollo
