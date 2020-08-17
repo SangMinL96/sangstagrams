@@ -19,7 +19,7 @@ type Post {
     location:String
     caption:String!
     user:User!
-    files:[File!]
+    files:[File!]!
     likes:[Like!]!
     Comments:[Comment!]!
   }
