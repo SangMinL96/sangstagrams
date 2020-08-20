@@ -19,7 +19,7 @@ export default {
             .$fragment(ROOM_FRAGMENT);
         }
       } else {
-        room = await prisma.room({ di: roomId }).$fragment(ROOM_FRAGMENT);
+        room = await prisma.room({ id: roomId }).$fragment(ROOM_FRAGMENT);
       }
       if (!room) {
         throw Error("Room not found");
@@ -32,7 +32,7 @@ export default {
         from: {
           connect: { id: user.id },
         },
-        toId: {
+        to: {
           connect: {
             id: roomId ? getTo.id : toId,
           },

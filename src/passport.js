@@ -6,7 +6,7 @@ const JwtOptions = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
   secretOrKey: process.env.JWT_SECRET,
 };
-console.log(process.env.JWT_SECRET);
+
 const verifyUser = async (payload, done) => {
   try {
     const user = await prisma.user({ id: payload.id });
