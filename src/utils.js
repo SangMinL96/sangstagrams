@@ -23,7 +23,7 @@ export const sendSecretMail = (adress, secret) => {
     from: "hwon3794@gmail.com",
     to: adress,
     subject: "Login Secret for Prismagram",
-    html: `Hello! Your login secret it${secret}.`,
+    html: `시크릿 암호 : <h1>${secret}<h1/>`,
   };
   return sendMail(email);
 };
